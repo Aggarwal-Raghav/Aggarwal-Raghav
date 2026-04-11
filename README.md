@@ -62,6 +62,7 @@
 ### 📊 Open Source Footprint
 
 <div align="center">
+<!-- PR_STATS_START -->
   <table>
     <thead>
       <tr>
@@ -82,13 +83,14 @@
         <td align="center"><b>Hive-Site</b></td>
       </tr>
       <tr>
-        <td align="center"><h2>70+</h2></td>
-        <td align="center"><h2>44</h2></td>
-        <td align="center"><h2>19</h2></td>
-        <td align="center"><h2>9</h2></td>
+        <td align="center"><h2>...</h2></td>
+        <td align="center"><h2>...</h2></td>
+        <td align="center"><h2>...</h2></td>
+        <td align="center"><h2>...</h2></td>
       </tr>
     </tbody>
   </table>
+<!-- PR_STATS_END -->
 </div>
 <br>
 
