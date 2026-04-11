@@ -1,0 +1,50 @@
+---
+name: Auto-Update PR Stats
+
+"on":
+  schedule:
+    # Runs automatically every 7 days (at midnight every Sunday)
+    - cron: '0 0 * * 0'
+    # Allows you to manually trigger the workflow from the Actions tab
+  workflow_dispatch:
+
+  # Required permissions for the bot to commit and push changes
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13.13'
+
+      - name: Install Python Dependencies
+        run: pip install requests
+
+      - name: Fetch PRs and Update README
+        env:
+          # Built-in token automatically provided by GitHub
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python update_stats.py
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email \
+          "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+
+          # Check if there are changes; if so, commit and push
+          if ! git diff --staged --quiet; then
+            git commit -m "docs: auto-update apache PR stats"
+            git push
+            echo "Successfully pushed new PR stats."
+          else
+            echo "No changes in PR stats detected. Skipping commit."
+          fi
