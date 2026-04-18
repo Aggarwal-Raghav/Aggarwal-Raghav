@@ -8,9 +8,6 @@
 
 <h3 align="center">Let's Connect 🤝</h3>
 <p align="center">
-    <a href="https://github.com/Aggarwal-Raghav" target="_blank">
-        <img alt="Github" src="https://img.shields.io/badge/GitHub-%2312100E.svg?&style=for-the-badge&logo=Github&logoColor=white"/>
-    </a>
     <a href="https://www.linkedin.com/in/Aggarwal-Raghav" target="_blank">
         <img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/>
     </a>
@@ -67,22 +64,30 @@
     <thead>
       <tr>
         <th colspan="4" align="center"><h3>Pull Requests Merged</h3></th>
+        <th colspan="1" align="center"><h3>PR Reviewed</h3></th>
+        <th colspan="1" align="center"><h3>PRs in Progress</h3></th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td align="center" width="25%"><img src="https://www.apache.org/img/asf_logo.png" height="28" alt="Apache" /></td>
-        <td align="center" width="25%"><img src="https://hive.apache.org/images/hive.svg" height="28" alt="Apache Hive" /></td>
-        <td align="center" width="25%"><img src="https://tez.apache.org/images/ApacheTezLogo_lowres.png" height="28" alt="Apache Tez" /></td>
-        <td align="center" width="25%"><img src="https://www.apache.org/img/asf_logo.png" height="28" alt="Apache" /></td>
+        <td align="center" width="16%"><img src="https://www.apache.org/img/asf_logo.png" height="28" alt="Apache" /></td>
+        <td align="center" width="16%"><img src="https://hive.apache.org/images/hive.svg" height="28" alt="Apache Hive" /></td>
+        <td align="center" width="16%"><img src="https://tez.apache.org/images/ApacheTezLogo_lowres.png" height="28" alt="Apache Tez" /></td>
+        <td align="center" width="16%"><img src="https://www.apache.org/img/asf_logo.png" height="28" alt="Apache" /></td>
+        <td align="center" width="16%"><img src="https://www.apache.org/img/asf_logo.png" height="28" alt="Apache" /></td>
+        <td align="center" width="16%"><img src="https://www.apache.org/img/asf_logo.png" height="28" alt="Apache" /></td>
       </tr>
       <tr>
         <td align="center"><b>Total Merged</b></td>
         <td align="center"><b>Apache Hive</b></td>
         <td align="center"><b>Apache Tez</b></td>
         <td align="center"><b>Hive-Site</b></td>
+        <td align="center"><b>Total Reviewed</b></td>
+        <td align="center"><b>Total Open</b></td>
       </tr>
       <tr>
+        <td align="center"><h2>...</h2></td>
+        <td align="center"><h2>...</h2></td>
         <td align="center"><h2>...</h2></td>
         <td align="center"><h2>...</h2></td>
         <td align="center"><h2>...</h2></td>
@@ -94,5 +99,6 @@
 </div>
 <br>
 
-* 🟢 **Active Work:** View my **[Currently Open Pull Requests](https://github.com/search?q=is%3Apr+author%3AAggarwal-Raghav+is%3Aopen&type=pullrequests)** across all repositories.
-* <img src="https://www.apache.org/img/asf_logo.png" height="16" align="center" alt="ASF" /> **Apache Contributions:** **[View All Merged PRs](https://github.com/search?q=is%3Apr+author%3AAggarwal-Raghav+is%3Amerged+org%3Aapache&type=pullrequests)** across the Apache Software Foundation.
+* 🟢 **Active Work:** **[View All Open Pull Requests](https://github.com/search?q=is%3Apr+author%3AAggarwal-Raghav+is%3Aopen+org%3Aapache&type=pullrequests)** across the Apache Software Foundation.
+* 🏆 **Apache Contributions:** **[View All Merged Pull Requests](https://github.com/search?q=is%3Apr+author%3AAggarwal-Raghav+is%3Amerged+org%3Aapache&type=pullrequests)** across the Apache Software Foundation.
+* 🔍 **Apache Reviews:** **[View All Reviewed Pull Requests](https://github.com/search?q=type%3Apr+reviewed-by%3AAggarwal-Raghav+-author%3AAggarwal-Raghav+org%3Aapache&type=pullrequests)** across the Apache Software Foundation.
