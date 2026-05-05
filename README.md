@@ -90,7 +90,7 @@
         <td align="center"><h2>42</h2></td>
         <td align="center"><h2>29</h2></td>
         <td align="center"><h2>8</h2></td>
-        <td align="center"><h2>54</h2></td>
+        <td align="center"><h2>55</h2></td>
         <td align="center"><h2>6</h2></td>
       </tr>
     </tbody>
