@@ -86,12 +86,12 @@
         <td align="center"><b>Total Open</b></td>
       </tr>
       <tr>
-        <td align="center"><h2>91</h2></td>
-        <td align="center"><h2>44</h2></td>
+        <td align="center"><h2>92</h2></td>
+        <td align="center"><h2>45</h2></td>
         <td align="center"><h2>39</h2></td>
         <td align="center"><h2>8</h2></td>
-        <td align="center"><h2>60</h2></td>
-        <td align="center"><h2>5</h2></td>
+        <td align="center"><h2>61</h2></td>
+        <td align="center"><h2>4</h2></td>
       </tr>
     </tbody>
   </table>
