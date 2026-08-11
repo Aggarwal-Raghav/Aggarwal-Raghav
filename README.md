@@ -56,7 +56,15 @@
 
 ---
 
-### 📊 Open Source Footprint
+### 📊 GitHub Metrics
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/Aggarwal-Raghav/Aggarwal-Raghav/main/github-metrics.svg" alt="GitHub Metrics" />
+</div>
+
+---
+
+### 📈 Open Source Footprint
 
 <div align="center">
 <!-- PR_STATS_START -->

@@ -1,0 +1,63 @@
+name: Update Profile Stats & Metrics
+
+on:
+  schedule:
+    # Runs automatically once a week (at midnight every Sunday)
+    - cron: "0 0 * * 0"
+  workflow_dispatch:
+  push:
+    branches: ["master", "main"]
+
+permissions:
+  contents: write
+
+jobs:
+  update-apache-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3"
+
+      - name: Fetch PRs and Update README
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python update_stats.py
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          if ! git diff --staged --quiet; then
+            git commit -m "docs: auto-update apache PR stats"
+            git push
+          else
+            echo "No changes in PR stats detected. Skipping commit."
+          fi
+
+  generate-metrics:
+    needs: update-apache-stats
+    runs-on: ubuntu-latest
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_message: "docs: auto-update github metrics"
+          user: Aggarwal-Raghav
+          template: classic
+          base: header, community, repositories, metadata
+          config_timezone: Asia/Kolkata
+          plugin_introduction: yes
+          plugin_introduction_title: yes
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: half-year
+          plugin_lines: yes
+          plugin_notable: yes
+          plugin_topics: yes
+          plugin_topics_limit: 15
+          plugin_topics_mode: icons
