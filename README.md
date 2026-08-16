@@ -98,8 +98,8 @@
         <td align="center"><h2>48</h2></td>
         <td align="center"><h2>44</h2></td>
         <td align="center"><h2>8</h2></td>
-        <td align="center"><h2>69</h2></td>
-        <td align="center"><h2>11</h2></td>
+        <td align="center"><h2>70</h2></td>
+        <td align="center"><h2>13</h2></td>
       </tr>
     </tbody>
   </table>
