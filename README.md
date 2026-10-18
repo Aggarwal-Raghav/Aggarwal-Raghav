@@ -99,7 +99,7 @@
         <td align="center"><h2>45</h2></td>
         <td align="center"><h2>8</h2></td>
         <td align="center"><h2>88</h2></td>
-        <td align="center"><h2>15</h2></td>
+        <td align="center"><h2>17</h2></td>
       </tr>
     </tbody>
   </table>
